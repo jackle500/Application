@@ -18,9 +18,8 @@ p {
     margin-bottom: 20px;
 }
 
-body {
+.content{
     background-color: #f9f4ef;
-
 }
 /*Button*/
 a.btn-primary.apply {

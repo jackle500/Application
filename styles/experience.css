@@ -3,9 +3,8 @@ Joo Application Version 2
 experience.css
 This file will style for experience, summary, mail HTML
 */
-body {
+.content{
     background-color: #f9f4ef;
-
 }
 /*Button*/
 a.btn-primary.apply {
