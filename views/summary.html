@@ -1,0 +1,117 @@
+<!--
+Huy Le
+Joo Application Version 2
+summary.html
+This file will display all the information harvest from the last 3 pages
+allow the user to submit their application
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Summary</title>
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../styles/experience.css" rel="stylesheet">
+    <script src="../Controller/scripts.js" defer></script>
+
+</head>
+<body onload="displayPersonalInformation(), displaySelectedSkills()">
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="views/home.html">
+            <!--SVG logo-->
+            <svg class="icon" fill="#000000" height="78px" version="1.1" viewBox="0 0 1024 1024"
+                 width="78px" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+                </g>
+                <g id="SVGRepo_iconCarrier">
+                    <path d="M512 960c-92.8 0-160-200-160-448S419.2 64 512 64s160 200 160 448-67.2 448-160 448z m0-32c65.6 0 128-185.6 128-416S577.6 96 512 96s-128 185.6-128 416 62.4 416 128 416z"
+                          fill="#050D42">
+                    </path>
+                    <path d="M124.8 736c-48-80 92.8-238.4 307.2-363.2S852.8 208 899.2 288 806.4 526.4 592 651.2 171.2 816 124.8 736z m27.2-16c33.6 57.6 225.6 17.6 424-97.6S905.6 361.6 872 304 646.4 286.4 448 401.6 118.4 662.4 152 720z"
+                          fill="#050D42"></path>
+                    <path d="M899.2 736c-46.4 80-254.4 38.4-467.2-84.8S76.8 368 124.8 288s254.4-38.4 467.2 84.8S947.2 656 899.2 736z m-27.2-16c33.6-57.6-97.6-203.2-296-318.4S184 246.4 152 304 249.6 507.2 448 622.4s392 155.2 424 97.6z"
+                          fill="#050D42"></path>
+                    <path d="M512 592c-44.8 0-80-35.2-80-80s35.2-80 80-80 80 35.2 80 80-35.2 80-80 80zM272 312c-27.2 0-48-20.8-48-48s20.8-48 48-48 48 20.8 48 48-20.8 48-48 48zM416 880c-27.2 0-48-20.8-48-48s20.8-48 48-48 48 20.8 48 48-20.8 48-48 48z m448-432c-27.2 0-48-20.8-48-48s20.8-48 48-48 48 20.8 48 48-20.8 48-48 48z"
+                          fill="#e1d275"></path>
+                </g>
+            </svg>
+            Tsushima LLC
+        </a>
+        <!--SVG logo-->
+        <!-- Apply Now Button -->
+        <div class="p-2 flex-shrink-1 bd-highlight">
+            <a class="btn btn-primary apply" href="personal.html">Apply Now</a>
+        </div>
+        <!-- Apply Now Button -->
+    </div>
+</nav>
+<!-- Navigation Bar-->
+<br>
+
+
+<div class="container">
+    <h1>Summary</h1>
+    <br>
+    <div class="row">
+        <div class="col-6" >
+            <table class="table">
+                <tbody>
+                <tr>
+                    <th scope="row">First Name:</th>
+                    <td id="summaryFirstName"></td>
+                </tr>
+                <tr>
+                    <th scope="row">Last Name:</th>
+                    <td id="summaryLastName"></td>
+                </tr>
+                <tr>
+                    <th scope="row">Email:</th>
+                    <td id="summaryEmail"></td>
+                </tr>
+                <!-- Add more rows as needed -->
+                <tr>
+                    <th scope="row">State:</th>
+                    <td id="summaryState"></td>
+                </tr>
+                <tr>
+                    <th scope="row">Phone:</th>
+                    <td id="summaryPhone"></td>
+                </tr>
+                <tr>
+                    <th scope="row">GitHub:</th>
+                    <td id="summaryGithub"></td>
+                </tr>
+                <tr>
+                    <th scope="row">Years of Experience:</th>
+                    <td id="experienceYear"></td>
+                </tr>
+                <tr>
+                    <th scope="row">Willing to Relocate:</th>
+                    <td id="willingToRelocate"></td>
+                </tr>
+
+                <tr>
+                <th scope="row">Mailing List:</th>
+                <td id="selectedSkills"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-6"><img src="../images/bio.jpeg" class="w-100" alt="bio-pic"></div>
+        <div class="col-6" ></div>
+        <div class="col-6 bo">
+            <h3>Summary</h3>
+            <p id="biography"></p>
+        </div>
+    </div>
+    <div class="text-center t-2 ">
+    <a href="#" class="btn btn-success submit w-75">Submit My Application</a>
+    </div>
+</div>
+
+
+</body>
+</html>

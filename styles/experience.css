@@ -1,0 +1,33 @@
+/*Huy Le
+Joo Application Version 2
+experience.css
+This file will style for experience, summary, mail HTML
+*/
+body {
+    background-color: #f9f4ef;
+
+}
+/*Button*/
+a.btn-primary.apply {
+    background: #a8ad97;
+    border: none;
+
+}
+
+a.btn-primary.apply:hover {
+    background: #d4c8be;
+}
+
+button.btn-block {
+    width: 100%;
+    margin-top: 50px;
+    background: #36d54f;
+    border: none;
+
+}
+.willing-to-relocate, .years-experience{
+    margin-top: 10px;
+}
+#biography{
+    width: 400px;
+}

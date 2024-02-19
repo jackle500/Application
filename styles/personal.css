@@ -1,0 +1,41 @@
+/*Huy Le
+Joo Application Version 2
+personal.css
+This file will style for the personal.HTML
+*/
+
+p {
+    padding-top: 1rem;
+}
+
+#notice{
+    border: #a8ad97 solid 1px;
+    background: lightgrey;
+    justify-content: center;
+    border-radius: 5px;
+    padding-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+body {
+    background-color: #f9f4ef;
+
+}
+/*Button*/
+a.btn-primary.apply {
+    background: #a8ad97;
+    border: none;
+
+}
+
+a.btn-primary.apply:hover {
+    background: #d4c8be;
+}
+
+button.btn-block {
+    width: 100%;
+    margin-top: 25px;
+    background: #36d54f;
+    border: none;
+}

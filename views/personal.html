@@ -1,0 +1,168 @@
+<!--
+Huy Le
+Joo Application Version 2
+personal.html
+This file collects personal information through a form, including first name, last name, email, state, and phone number.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Information</title>
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../styles/personal.css" rel="stylesheet">
+    <script src="../Controller/scripts.js" defer></script>
+
+</head>
+<body>
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="views/home.html">
+            <!--SVG logo-->
+            <svg class="icon" fill="#000000" height="78px" version="1.1" viewBox="0 0 1024 1024"
+                 width="78px" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+                </g>
+                <g id="SVGRepo_iconCarrier">
+                    <path d="M512 960c-92.8 0-160-200-160-448S419.2 64 512 64s160 200 160 448-67.2 448-160 448z m0-32c65.6 0 128-185.6 128-416S577.6 96 512 96s-128 185.6-128 416 62.4 416 128 416z"
+                          fill="#050D42">
+                    </path>
+                    <path d="M124.8 736c-48-80 92.8-238.4 307.2-363.2S852.8 208 899.2 288 806.4 526.4 592 651.2 171.2 816 124.8 736z m27.2-16c33.6 57.6 225.6 17.6 424-97.6S905.6 361.6 872 304 646.4 286.4 448 401.6 118.4 662.4 152 720z"
+                          fill="#050D42"></path>
+                    <path d="M899.2 736c-46.4 80-254.4 38.4-467.2-84.8S76.8 368 124.8 288s254.4-38.4 467.2 84.8S947.2 656 899.2 736z m-27.2-16c33.6-57.6-97.6-203.2-296-318.4S184 246.4 152 304 249.6 507.2 448 622.4s392 155.2 424 97.6z"
+                          fill="#050D42"></path>
+                    <path d="M512 592c-44.8 0-80-35.2-80-80s35.2-80 80-80 80 35.2 80 80-35.2 80-80 80zM272 312c-27.2 0-48-20.8-48-48s20.8-48 48-48 48 20.8 48 48-20.8 48-48 48zM416 880c-27.2 0-48-20.8-48-48s20.8-48 48-48 48 20.8 48 48-20.8 48-48 48z m448-432c-27.2 0-48-20.8-48-48s20.8-48 48-48 48 20.8 48 48-20.8 48-48 48z"
+                          fill="#e1d275"></path>
+                </g>
+            </svg>
+            Tsushima LLC
+        </a>
+        <!--SVG logo-->
+        <!-- Apply Now Button -->
+        <div class="p-2 flex-shrink-1 bd-highlight">
+            <a class="btn btn-primary apply" href="personal.html">Apply Now</a>
+        </div>
+        <!-- Apply Now Button -->
+    </div>
+</nav>
+<!-- Navigation Bar-->
+
+
+<div class="container">
+    <h1>Personal Information</h1>
+    <hr>
+    <form id="formPage1" action="experience.html" method="post" onsubmit="savePersonalInformation()">
+    <div class="row">
+        <div class="col-lg-8 col-sm-8 column">
+            <div class="row">
+                <div class="col-lg-6 col-sm-6 column">
+                    <!--First Name-->
+                    <div class="ge-content ge-content-type-tinymce" data-ge-content-type="tinymce">
+                        <label for="inputFName">First Name</label>
+                        <input class="form-control" id="inputFName" placeholder="John" type="text">
+                    </div>
+                </div>
+                <!--Last Name-->
+                <div class="col-lg-6 col-sm-6 column">
+                    <div class="ge-content ge-content-type-tinymce" data-ge-content-type="tinymce">
+                        <label for="inputLName">Last Name</label>
+                        <input class="form-control" id="inputLName" placeholder="Smith" type="text">
+                    </div>
+                </div>
+            </div>
+            <!--Email-->
+            <div class="ge-content ge-content-type-tinymce" data-ge-content-type="tinymce">
+                <div class="ge-content ge-content-type-tinymce mce-content-body mce-edit-focus" contenteditable="true" data-ge-content-type="tinymce" data-mce-style="position: relative;">
+                    <label for="inputEmail">Email</label>
+                    <input class="form-control" id="inputEmail" placeholder="Email" type="email">
+                </div>
+            </div>
+        </div>
+        <!--NOTICE-->
+        <div class="col-lg-4 col-sm-4 column">
+            <div class="ge-content ge-content-type-tinymce" data-ge-content-type="tinymce" id="notice">
+                <p><strong>Note:</strong> All information entered is protected by our <STRONG>privacy policy</STRONG>
+                    . Profile information can only view by other with your permission.</p>
+            </div>
+        </div>
+        <!-- US State Select-->
+        <div class="col-lg-4 col-sm-4 column">
+            <div class="ge-content ge-content-type-tinymce" data-ge-content-type="tinymce">
+                <label for="state">State</label>
+                <select class="form-control" id="state" name="state">
+                    <option value="Washington">Washington</option>
+                    <option value="Alaska">Alaska</option>
+                    <option value="Alabama">Alabama</option>
+                    <option value="Arkansas">Arkansas</option>
+                    <option value="Arizona">Arizona</option>
+                    <option value="California">California</option>
+                    <option value="Colorado">Colorado</option>
+                    <option value="Connecticut">Connecticut</option>
+                    <option value="District">District of Columbia</option>
+                    <option value="Delaware">Delaware</option>
+                    <option value="Florida">Florida</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Hawaii">Hawaii</option>
+                    <option value="Iowa">Iowa</option>
+                    <option value="Idaho">Idaho</option>
+                    <option value="Illinois">Illinois</option>
+                    <option value="IndianaN">Indiana</option>
+                    <option value="Kansas">Kansas</option>
+                    <option value="Kentucky">Kentucky</option>
+                    <option value="Louisiana">Louisiana</option>
+                    <option value="Massachusetts">Massachusetts</option>
+                    <option value="Maryland">Maryland</option>
+                    <option value="Maine">Maine</option>
+                    <option value="Michigan">Michigan</option>
+                    <option value="Minnesota">Minnesota</option>
+                    <option value="Missouri">Missouri</option>
+                    <option value="Mississippi">Mississippi</option>
+                    <option value="Montana">Montana</option>
+                    <option value=">North Carolin">North Carolina</option>
+                    <option value="North Dakota">North Dakota</option>
+                    <option value="Nebraska">Nebraska</option>
+                    <option value="New Hampshire">New Hampshire</option>
+                    <option value="New Jersey">New Jersey</option>
+                    <option value="New Mexico">New Mexico</option>
+                    <option value="Nevada">Nevada</option>
+                    <option value="New York">New York</option>
+                    <option value="Ohio">Ohio</option>
+                    <option value="Oklahoma">Oklahoma</option>
+                    <option value="Oregon">Oregon</option>
+                    <option value="Pennsylvania">Pennsylvania</option>
+                    <option value="Puerto Rico">Puerto Rico</option>
+                    <option value="Rhode Island">Rhode Island</option>
+                    <option value="South Carolina">South Carolina</option>
+                    <option value="South Dakota">South Dakota</option>
+                    <option value="Tennessee">Tennessee</option>
+                    <option value="Texas">Texas</option>
+                    <option value="Utah">Utah</option>
+                    <option value="Virginia">Virginia</option>
+                    <option value="Vermont">Vermont</option>
+                    <option value="Wisconsin">Wisconsin</option>
+                    <option value="West Virginia">West Virginia</option>
+                    <option value="Wyoming">Wyoming</option>
+                </select>
+            </div>
+        </div>
+        <!-- Phone number-->
+        <div class="col-lg-4 col-sm-4 column">
+            <div class="ge-content ge-content-type-tinymce" data-ge-content-type="tinymce">
+                <label for="phone">Phone</label>
+                <input class="form-control" id="phone" placeholder="222-333-4444" type="tel">
+            </div>
+        </div>
+        <!--Next Button-->
+        <div class="col-lg-4 col-sm-4 column" style="">
+            <div class="ge-content ge-content-type-tinymce" data-ge-content-type="tinymce">
+                <button class="btn btn-primary btn-block btn2 next" type="submit">Next</button>
+            </div>
+        </div>
+    </div>
+    </form>
+</div>
+
+</body>
+</html>

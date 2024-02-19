@@ -1,0 +1,12 @@
+{
+  "Name": "huyle/328/Application",
+  "Description": "My Job Application",
+  "Authors": [
+    {
+      "name": "Huy Le",
+      "email": "huy.le@greenriver.edu"
+    }
+  ],
+  "require": {
+    "bcosca/fatfree-core": "dev-master"}
+}

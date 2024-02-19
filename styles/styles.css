@@ -1,0 +1,35 @@
+/*Huy Le
+Joo Application Version 2
+styles.css
+This file will style for the home.HTML
+*/
+a.btn-primary {
+    background: #a8ad97;
+    border: none;
+
+}
+
+a.btn-primary:hover {
+    background: #d4c8be;
+}
+
+
+div.col-md.header#header {
+    text-align: center;
+    justify-content: center;
+}
+
+img {
+    border-radius: 25px;
+}
+
+p {
+    padding-top: 2rem;
+}
+body{
+    background-color: #f9f4ef;
+}
+
+.col-md h2{
+    text-align: center;
+}
