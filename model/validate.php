@@ -6,7 +6,7 @@
     * validate.php
     * This file validate all the storing information from personal, experience
     * */
-    class Validate {
+    class validate {
         public static function validName(string $name): bool {
             return ctype_alpha($name);
         }

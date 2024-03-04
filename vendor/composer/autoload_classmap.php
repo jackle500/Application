@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'AppController' => $baseDir . '/Controller/AppController.php',
     'Audit' => $vendorDir . '/bcosca/fatfree-core/audit.php',
     'Auth' => $vendorDir . '/bcosca/fatfree-core/auth.php',
     'Base' => $vendorDir . '/bcosca/fatfree-core/base.php',
@@ -26,7 +27,7 @@ return array(
     'DB\\SQL\\Session' => $vendorDir . '/bcosca/fatfree-core/db/sql/session.php',
     'Data' => $baseDir . '/model/data.php',
     'F3' => $vendorDir . '/bcosca/fatfree-core/f3.php',
-    'FormValidation' => $baseDir . '/Controller/form.php',
+    'FormControl' => $baseDir . '/Controller/FormControl.php',
     'ISO' => $vendorDir . '/bcosca/fatfree-core/base.php',
     'Image' => $vendorDir . '/bcosca/fatfree-core/image.php',
     'Log' => $vendorDir . '/bcosca/fatfree-core/log.php',
@@ -49,4 +50,5 @@ return array(
     'Web\\OAuth2' => $vendorDir . '/bcosca/fatfree-core/web/oauth2.php',
     'Web\\OpenID' => $vendorDir . '/bcosca/fatfree-core/web/openid.php',
     'Web\\Pingback' => $vendorDir . '/bcosca/fatfree-core/web/pingback.php',
+    'validate' => $baseDir . '/model/validate.php',
 );

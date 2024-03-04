@@ -7,6 +7,7 @@ namespace Composer\Autoload;
 class ComposerStaticInitd75adccd5ecc803819a1bdd1c6af9c94
 {
     public static $classMap = array (
+        'AppController' => __DIR__ . '/../..' . '/Controller/AppController.php',
         'Audit' => __DIR__ . '/..' . '/bcosca/fatfree-core/audit.php',
         'Auth' => __DIR__ . '/..' . '/bcosca/fatfree-core/auth.php',
         'Base' => __DIR__ . '/..' . '/bcosca/fatfree-core/base.php',
@@ -27,7 +28,7 @@ class ComposerStaticInitd75adccd5ecc803819a1bdd1c6af9c94
         'DB\\SQL\\Session' => __DIR__ . '/..' . '/bcosca/fatfree-core/db/sql/session.php',
         'Data' => __DIR__ . '/../..' . '/model/data.php',
         'F3' => __DIR__ . '/..' . '/bcosca/fatfree-core/f3.php',
-        'FormValidation' => __DIR__ . '/../..' . '/Controller/form.php',
+        'FormControl' => __DIR__ . '/../..' . '/Controller/FormControl.php',
         'ISO' => __DIR__ . '/..' . '/bcosca/fatfree-core/base.php',
         'Image' => __DIR__ . '/..' . '/bcosca/fatfree-core/image.php',
         'Log' => __DIR__ . '/..' . '/bcosca/fatfree-core/log.php',
@@ -50,6 +51,7 @@ class ComposerStaticInitd75adccd5ecc803819a1bdd1c6af9c94
         'Web\\OAuth2' => __DIR__ . '/..' . '/bcosca/fatfree-core/web/oauth2.php',
         'Web\\OpenID' => __DIR__ . '/..' . '/bcosca/fatfree-core/web/openid.php',
         'Web\\Pingback' => __DIR__ . '/..' . '/bcosca/fatfree-core/web/pingback.php',
+        'validate' => __DIR__ . '/../..' . '/model/validate.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
