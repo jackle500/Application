@@ -5,7 +5,7 @@
      * form.php
      * This file handles the validation of information from personal, experience, and mail HTML forms.
      */
-    class FormValidation {
+    class FormControl {
 
         public function processFormData(object $f3, array $requiredFields, array $nonRequiredFields, string $redirect): void {
             $this->initializeErrorMessages($f3, $requiredFields);
